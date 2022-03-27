@@ -1,0 +1,178 @@
+body {
+  background: #fad8de;
+}
+
+* {
+  user-select: none;
+  outline: none;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background-color: #fd798f;
+  color: #fff;
+  width: 100%;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+
+.main-title {
+  max-width: 500px;
+  margin: 2rem auto 5rem auto;
+}
+
+.main-card {
+  padding: 2rem;
+  margin: 0 auto 5rem auto;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem #f5b1b1;
+
+  &.card {
+    padding: 0;
+    border: 0;
+
+    .card-body {
+      padding: 0;
+      border-radius: 2rem;
+      overflow: hidden;
+      border: 0.25em solid #fff;
+
+      .card-title {
+        background: #fd798f;
+        color: #fff;
+        font-weight: bold;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: center;
+      }
+
+      .form {
+        background: #e3eaf5;
+        padding: 1rem;
+
+        .total-orders {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .total-orders-number {
+            background: #fd798f;
+            color: #fff;
+            padding: 0.25rem 1rem;
+            border-radius: 0.5rem;
+            margin-left: 0.5rem;
+          }
+        }
+
+        .form-row {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          justify-items: end;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          > *:first-child {
+            padding-right: 1rem;
+
+            &.required::after {
+              content: "*";
+              color: tomato;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-card {
+  max-width: 800px;
+
+  .title {
+    width: fit-content;
+    padding: 0.5rem 3rem;
+    margin: 0 auto 2rem auto;
+  }
+
+  .card {
+    border-color: #fd798f;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0.2rem 0.2rem 0 #fd798f;
+    margin-bottom: 1rem;
+
+    &:hover {
+      transform: scale(1.25);
+      z-index: 1;
+    }
+
+    .price::before {
+      content: "₱";
+    }
+  }
+}
+
+.order-card {
+  max-width: 500px;
+}
+
+
+.btn-pink {
+  background: #fd798f;
+  color: #fff;
+  border: 0;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background: #ff5874;
+  }
+}
+
+.bg-pink {
+  background: #fd798f;
+  color: #fff;
+}
+
+.invoice-row {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  margin-bottom: 1rem;
+  .label {
+    font-weight: bold;
+  }
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem auto;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+
+  a {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .hotline {
+    font-size: 1.5rem;
+    color: yellow;
+  }
+}
