@@ -84,7 +84,6 @@ body {
             &.required::after {
               content: "*";
               color: tomato;
-              font-size: 1.5rem;
             }
           }
         }
@@ -162,8 +161,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    
   }
 
   a {
