@@ -92,6 +92,10 @@ body {
   padding: 0.5rem 3rem;
   margin: 0 auto 2rem auto;
 }
+.menu-card .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 .menu-card .card {
   border-color: #fd798f;
   transition: 0.2s ease-in-out;

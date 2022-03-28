@@ -101,6 +101,11 @@ body {
     margin: 0 auto 2rem auto;
   }
 
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   .card {
     border-color: #fd798f;
     transition: 0.2s ease-in-out;
