@@ -84,9 +84,6 @@ body {
   color: tomato;
 }
 
-.menu-card {
-  max-width: 800px;
-}
 .menu-card .title {
   width: fit-content;
   padding: 0.5rem 3rem;
@@ -94,13 +91,16 @@ body {
 }
 .menu-card .row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
 }
 .menu-card .card {
   border-color: #fd798f;
   transition: 0.2s ease-in-out;
   box-shadow: 0.2rem 0.2rem 0 #fd798f;
   margin-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 .menu-card .card:hover {
   transform: scale(1.25);
