@@ -37,25 +37,81 @@
       </div>
     </div>
   </nav>
+  
   <div class="container">
     <!-- title -->
     <h1 class="title main-title">Meeryenda</h1>
 
-    <!-- menu -->
+    <!-- begin menu -->
     <div class="main-card menu-card">
-      <h3 class="title menu-title">Menu</h3>
-      <div class="row" id="menu-items">
-        <!-- available items will be injected here -->
+      <h3 class="title menu-title">Supply Menu</h3>
+      <div class="row" id="menu-supply"></div>
+    </div>
+    <div class="main-card menu-card">
+      <h3 class="title menu-title">Services Menu</h3>
+      <div class="row" id="menu-services"></div>
+    </div>
+    <div class="main-card menu-card">
+      <h3 class="title menu-title">Cold Drinks Menu</h3>
+      <div class="row" id="menu-colddrinks"></div>
+    </div>
+    <div class="main-card menu-card">
+      <h3 class="title menu-title">Warm Drinks Menu</h3>
+      <div class="row" id="menu-warmdrinks"></div>
+    </div>
+    <div class="main-card menu-card">
+      <h3 class="title menu-title">Sandwiches Menu</h3>
+      <div class="row" id="menu-sandwiches"></div>
+    </div>
+    <!-- end menu -->
+
+    <!-- begin order form -->
+    <div class="card main-card order-card">
+      <div class="card-body">
+        <div class="card-title">Supply Order Form</div>
+        <div class="form container">
+          <div id="qty-supply"></div>
+        </div>
       </div>
     </div>
-
-    <!-- order form -->
+    <div class="card main-card order-card">
+      <div class="card-body">
+        <div class="card-title">Services Order Form</div>
+        <div class="form container">
+          <div id="qty-services"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card main-card order-card">
+      <div class="card-body">
+        <div class="card-title">Cold Drinks Order Form</div>
+        <div class="form container">
+          <div id="qty-colddrinks"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card main-card order-card">
+      <div class="card-body">
+        <div class="card-title">Warm Drinks Order Form</div>
+        <div class="form container">
+          <div id="qty-warmdrinks"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card main-card order-card">
+      <div class="card-body">
+        <div class="card-title">Sandwiches Order Form</div>
+        <div class="form container">
+          <div id="qty-sandwiches"></div>
+        </div>
+      </div>
+    </div>
     <div class="card main-card order-card">
       <div class="card-body">
         <div class="card-title">Order Form</div>
         <div class="form container">
           <div class="total-orders">
-            Choose your Meeryenda <span class="total-orders-number">0</span>
+            Selected Meeryenda <span class="total-orders-number">0</span>
           </div>
           <div id="quantitities">
             <!-- order quantity form will be injected here -->
@@ -71,6 +127,7 @@
         </div>
       </div>
     </div>
+    <!-- end order form -->
 
     <!-- customer info -->
     <div class="card main-card order-card">
@@ -97,7 +154,7 @@
           </div>
 
           <div class="text-center actions">
-            
+
             <!-- submit button -->
             <button class="btn btn-pink mt-4" id="submit-form" data-bs-toggle="modal"
               data-bs-target="#result-modal">Submit</button><br />
