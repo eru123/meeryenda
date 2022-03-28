@@ -82,7 +82,6 @@ body {
 .main-card.card .card-body .form .form-row > *:first-child.required::after {
   content: "*";
   color: tomato;
-  font-size: 1.5rem;
 }
 
 .menu-card {
